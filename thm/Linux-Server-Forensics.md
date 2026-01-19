@@ -53,5 +53,25 @@
   ```
   dengan menjalankan command diatas akan dihasilkan history nya dan dapat diketahui first command pertama root adalah nano /etc/passwd
 
+- Task 11:
+  #### Figure out what's going on and find the flag.
+
+  Untuk menjawab nya pertama-tama perlu untuk melihat layanan  apa saja yang berjalan di server tersebut dengan menggunakan 
+  
+  ```bash
+    systemctl --type=service --state=active
+  ```  
+  setelah dijalankan akan muncul banyak layanan yang sedang aktif. Kita perlu untuk melihat layanan mana yang mencurigakan. dan didapatlah layanan IpManager.Service. Layanan ini mencurigakan karena layanan ini berbeda dari standar layanan linux yaitu terdapat huruf besar dan nama IpManager bukan lah nama yang standar digunakan di layanan Linux. Karena sudah ditemukan kita perlu mengecek informasi lebih lanjut tentang layanan itu dengan menggunakan:
+    
+    ```bash
+    systemctl status IpManager.Service.
+  ```
+    setelah di jalankan akan muncul informasi lebih lanjut seperti letak file yang menjalankan layanan tersebut yaitu bin//bash /etc/network/ZGtsam5hZG1ua2Fu.sh. Langkah selanjutnya adalah melihat file tersebut dengan menjalankan :
+     ```bash
+    cat bin/bash/etc/network/ZGtsam5hZG1ua2Fu.sh
+  ```
+  dan akan muncul flag nya yaitu [gh0st_1n_the_machine].
+
+  
 
 
