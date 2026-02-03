@@ -69,6 +69,9 @@ tim yang melakukan kolaborasi dengan penulis malware tersebut dapat dilihat pada
 
 <img width="1855" height="892" alt="image" src="https://github.com/user-attachments/assets/ef8d1acd-bde3-4cf9-a7d5-de61acc819ac" />
 #### 9. A Mexican-based affiliate related to the malware family also uses other infostealers. Which mentioned infostealer targets Android systems?
+Ans:
+Infostealer (pencuri informasi) adalah jenis malware yang dirancang khusus untuk menginfeksi perangkat, lalu mencuri data sensitif seperti kredensial login (username/password), data perbankan, cookie browser, dan file penting secara diam-diam, kemudian mengirimkannya ke penyerang. 
+Untuk mengetahui infostealer lain yang digunakan dapat diketahui lewat laporan TI dengan judul  
 
 
 
